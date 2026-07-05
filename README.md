@@ -47,7 +47,6 @@ La función `ClasificarDesempeño` fue definida explícitamente con la propiedad
 1. **Previsibilidad de Retorno:** Una función es determinista si, dado un estado fijo en las tablas de la base de datos, pasar el mismo parámetro de entrada (`estudiante_id`) siempre devolverá exactamente el mismo valor de salida de texto (`VARCHAR`). 
 2. **Ausencia de Componentes Volátiles:** El algoritmo interno se basa exclusivamente en los registros almacenados y no depende de variables dinámicas globales del sistema que cambien segundo a segundo, tales como funciones de tiempo real (`NOW()`, `SYSDATE()`) o funciones de azares numéricos (`RAND()`).
 3. **Eficiencia y Caché:** Declarar la función como determinista le permite al motor de MySQL optimizar los planes de ejecución. Esto significa que el servidor puede almacenar en caché el resultado de la clasificación para consultas masivas repetitivas, evitando procesar la fórmula matemática una y otra vez sobre el mismo ID de estudiante, mejorando drásticamente el rendimiento del CPU.
-
 ---
 **Entregado por:** Camper  
 **Tecnologías:** MySQL / SQL DDL & DML  

@@ -78,3 +78,4 @@ SELECT
     ClasificarDesempeño(id_estudiante) AS 'Clasificación'
 FROM notas
 GROUP BY id_estudiante;
+
